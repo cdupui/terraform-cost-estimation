@@ -52,7 +52,6 @@ resource "azurerm_linux_function_app" "my_function" {
   location                   = "eastus"
   name                       = "test"
   resource_group_name        = "test"
-  service_plan_id            = "/subscriptions/123/resourceGroups/testrg/providers/Microsoft.Web/serverFarms/serverFarmValue"
   storage_account_name       = "test"
   storage_account_access_key = "test"
   site_config {}
