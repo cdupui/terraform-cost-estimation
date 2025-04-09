@@ -47,16 +47,3 @@ resource "azurerm_service_plan" "my_app_service" {
     Service     = "web-app"
   }
 }
-
-resource "azurerm_linux_function_app" "my_function" {
-  location                   = "eastus"
-  name                       = "test"
-  resource_group_name        = "test"
-  storage_account_name       = "test"
-  storage_account_access_key = "test"
-  site_config {}
-
-  tags = {
-    Environment = "Prod"
-  }
-}
